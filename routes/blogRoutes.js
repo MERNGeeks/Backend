@@ -1,5 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const blogRoutes = require('../controllers/blogControllers');
+const BLOG_API = require('../controllers/blogControllers');
 
-router.get('/', blogRoutes);
+module.exports = router;

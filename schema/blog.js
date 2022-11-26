@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const blogSchema = new Schema({
+const blogSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
@@ -13,6 +13,10 @@ const blogSchema = new Schema({
     hashtags: {
         type: String,
         required: true
+    },
+    createdDate: {
+        type: Date,
+        default: Date.now
     }
 });
 
