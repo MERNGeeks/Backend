@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { passwordValidation } = require('../utilities/passwordValidation');
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,

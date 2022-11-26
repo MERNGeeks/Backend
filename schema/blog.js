@@ -17,6 +17,10 @@ const blogSchema = new mongoose.Schema({
     createdDate: {
         type: Date,
         default: Date.now
+    },
+    role: {
+        type: String,
+        default: "user"
     }
 });
 
